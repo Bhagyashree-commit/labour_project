@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".Contractor.ContractorProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:popupBackground="#3ab9da"
+                app:hintTextAppearance="@style/CustomTextAppearance2"
+                android:textAlignment="center"
+                android:layout_height="match_parent"
+                android:id="@+id/spin_language"/>
+        </RelativeLayout>
+
+        <ImageView
+                android:id="@+id/shareApp"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/sshare1"
+                />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/header_icon"
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/logof"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/contract"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_140sdp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_130sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    app:cardBackgroundColor="@color/semiTransparentColor"
+                    android:layout_weight=".8">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/relContractor"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/btnprofile"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/con_pro"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView45"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btnprofile"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:text="@string/contractormain"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/fontcolor1"
+                            android:textSize="@dimen/_15sdp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_height="match_parent"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardBackgroundColor="@color/semiTransparentColor"
+
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    android:layout_weight=".8">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/relLabourer"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/btnjobpost"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/labor_pro"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btnjobpost"
+                            android:text="@string/labormain"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/fontcolor1"
+                            android:textSize="@dimen/_15sdp"
+                            /></RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/archi"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/linearLayout3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_130sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp"
+                android:layout_margin="@dimen/_10sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardBackgroundColor="@color/semiTransparentColor"
+
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    android:layout_weight=".8">
+
+                    <RelativeLayout
+                        android:id="@+id/relArchitect"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/btnconfirmation"
+                            android:layout_width="@dimen/_60sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/architect_pro"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView91"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btnconfirmation"
+                            android:text="@string/architectmain"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/fontcolor1"
+                            android:textSize="@dimen/_15sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            /></RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardBackgroundColor="@color/semiTransparentColor"
+
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    android:layout_weight=".8">
+
+                    <RelativeLayout
+                        android:id="@+id/relengineer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/btnlivetracklabor"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_centerHorizontal="true"
+                            android:background="@drawable/engineeer_pro"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView454"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btnlivetracklabor"
+                            android:text="@string/engineermain"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+
+                            android:layout_marginTop="@dimen/_10sdp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/fontcolor1"
+                            android:textSize="@dimen/_15sdp"
+                            /></RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout></androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/owner"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout34"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="MissingConstraints">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardBackgroundColor="@color/semiTransparentColor"
+
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    android:layout_weight=".8">
+
+                    <RelativeLayout
+                        android:id="@+id/relowner"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/btnwages"
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_60sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/owner_pro"
+                            android:layout_centerHorizontal="true"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView488"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/btnwages"
+                            android:text="@string/owenermain"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/fontcolor1"
+                            android:textSize="@dimen/_15sdp"
+                            /></RelativeLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="@dimen/_5sdp"
+                    app:cardElevation="@dimen/_15sdp"
+                    app:cardBackgroundColor="@color/semiTransparentColor"
+
+                    app:cardCornerRadius="@dimen/_20sdp"
+                    android:layout_weight=".8">
+
+                    <RelativeLayout
+                        android:id="@+id/reldeveloper"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/paystatus"
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:background="@drawable/sitee"
+                            android:layout_centerHorizontal="true"
+                            tools:ignore="VectorDrawableCompat" />
+
+                        <TextView
+                            android:id="@+id/textView48"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/paystatus"
+                            android:text="@string/developermain"
+                            android:textAllCaps="true"
+                            android:textStyle="bold"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:layout_centerHorizontal="true"
+                            android:textColor="@color/fontcolor1"
+                            android:textSize="@dimen/_15sdp"
+                            /></RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout></androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp">
+                <ImageView
+                    android:layout_width="@dimen/_35sdp"
+                    android:src="@drawable/shital"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:text="Shantal Consulting Engineers"
+                    android:textStyle="bold"
+                    android:id="@+id/open_site"
+                    android:singleLine="true"
+                    android:background="#00ffffff"
+                    android:textColor="#F4511E"
+
+                    android:textAllCaps="true"
+                    android:gravity="center"
+                    android:textSize="@dimen/_16sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

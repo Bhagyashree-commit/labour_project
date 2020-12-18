@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Owner.OwnerProfile"
+    android:background="@color/blue_200">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gradient"
+            >
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:textAllCaps="true"
+                android:layout_centerInParent="true"
+                android:text="@string/ownerprofile"
+                android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/md_25"
+            android:layout_marginRight="@dimen/md_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcomeowner"
+            android:textColor="@color/colortext"
+            android:textSize="@dimen/md_15"
+            android:layout_marginTop="@dimen/md_25"></TextView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/md_25"
+            android:layout_marginRight="@dimen/md_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/username"
+                android:textColorHint="@color/black"
+                app:hintTextAppearance="@style/CustomTextAppearance1">
+
+                <EditText
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:id="@+id/etowner_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/md_25"
+            android:layout_marginRight="@dimen/md_25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobnum">
+
+                <EditText
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:id="@+id/etowner_mobilenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:digits="0123456789"
+                    android:maxLength="10"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:background="@drawable/square_box"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/nameofwork"
+                android:textColorHint="@color/black"
+                app:hintTextAppearance="@style/CustomTextAppearance1">
+
+                <EditText
+                    android:background="@null"
+                    android:gravity="center"
+                    android:backgroundTint="@null"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_13sdp"
+                    android:inputType="textCapCharacters"
+                    android:id="@+id/etowner_areaofoperation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:background="@drawable/square_box"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/approvedfrom"
+                android:textColorHint="@color/black"
+                app:hintTextAppearance="@style/CustomTextAppearance1">
+
+                <EditText
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:textSize="@dimen/_13sdp"
+                    android:gravity="center"
+                    android:inputType="textCapCharacters"
+                    android:id="@+id/etowner_postaladdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:background="@drawable/square_box"
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/md_25">
+
+
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/category_workinghoursofowner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/servicerequired"
+                android:layout_margin="@dimen/_3sdp"
+                android:gravity="center"
+                android:textSize="@dimen/_13sdp"
+                android:textColorHint="@color/black"
+                app:hintTextAppearance="@style/CustomTextAppearance1"
+                android:background="@color/background"
+                android:popupBackground="@color/background"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_box"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/messageTextInputLayout9"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/requiredlabor"
+                    android:editable="false"
+                    android:textSize="@dimen/_13sdp"
+                    android:gravity="center"
+                    android:id="@+id/textactivitytyp"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg_interestedonworking"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_span="3">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_daily"
+                        android:checked="true"
+                        android:text="@string/photo"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_weekly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gallery"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/radio_monthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/brochure"></RadioButton>
+
+                </RadioGroup>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <Button
+            android:text="@string/submit"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:padding="@dimen/_5sdp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_submitowner"
+            android:layout_margin="@dimen/_18sdp"
+            android:textColor="#ffffff"
+            android:background="@drawable/capsulebutton"
+            ></Button>
+
+        <!--  <Button
+              android:text="@string/logout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/btn_logoutcontractor"
+              android:layout_marginLeft="@dimen/md_25"
+              android:layout_marginRight="@dimen/md_25"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="@dimen/md_25"
+              android:textColor="#ffffff"
+              android:background="@color/colorAccent"
+              ></Button>-->
+
+
+    </LinearLayout>
+
+</ScrollView>

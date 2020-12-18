@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".Developer.DevJobDetails">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="@string/devprofile"
+            android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/md_20">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fetchname1"
+                android:textColor="@color/buttoncolor"
+                android:text="Registerd Name :"
+                android:textSize="@dimen/md_15"
+                android:visibility="gone"
+                android:layout_margin="@dimen/md_5"
+                ></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/fetchname"
+                android:textColor="@color/buttoncolor"
+                android:text="username"
+                android:visibility="gone"
+                android:layout_toRightOf="@+id/fetchname1"
+                android:textSize="@dimen/md_15"
+                android:layout_margin="@dimen/md_5"
+                android:gravity="center"></TextView>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/idENG"
+                android:visibility="invisible"
+               ></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jobtitle1"
+                android:layout_marginTop="@dimen/md_25"
+                android:id="@+id/tv12"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/orange_900"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jobtitle1"
+                android:layout_below="@+id/tv12"
+                android:id="@+id/fetchjobtitleENG"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/colortext"
+                ></TextView>
+        </RelativeLayout>
+   <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/md_20"
+                android:text="@string/jobdetails1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/orange_900"></TextView>
+            <TextView
+                android:id="@+id/fetchjobdetailsENG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/md_20"
+                android:layout_below="@+id/tv13"
+                android:text="@string/jobdetails1"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
+                android:textColor="@color/colortext"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jobarea1"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/fetchjobareaENG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv14"
+                android:text="@string/jobarea1"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_10sdp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jobwages1"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20" />
+
+            <TextView
+                android:id="@+id/fetchjobwagesENG"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/fetchjobcreatedbyENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+               ></TextView>
+            <TextView
+                android:id="@+id/fetchjobcreatedbynameENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+               ></TextView>
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnapplyENG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clicktoapply"
+            android:background="@drawable/gradient"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/md_25"
+            android:layout_marginBottom="50dp"
+            >
+
+        </Button>
+
+
+        <TextView
+            android:id="@+id/textViewToken"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:visibility="invisible"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Message Title"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/editTextMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Message"
+            android:visibility="invisible"/>
+
+        <Button
+            android:text="Send Notification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buttonRegister"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/buttonSendNotification" />
+
+
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

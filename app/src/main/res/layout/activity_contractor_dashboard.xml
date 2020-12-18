@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contractor.ContractorDashboard"
+    android:background="@color/blue_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_200"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gradient"
+            >
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="@string/contractorprofile"
+                android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_marginLeft="@dimen/_25sdp"
+            android:layout_marginRight="@dimen/_25sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcomecontractor"
+            android:textColor="@color/colortext"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_25sdp"></TextView>
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_box"
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+
+                android:hint="@string/location">
+
+                <EditText
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:inputType="textCapCharacters"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:id="@+id/etcontractor_areaofoperation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/black"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:background="@drawable/square_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+
+                android:hint="@string/pincode">
+
+                <EditText
+                    android:id="@+id/etcontractor_postaladdress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:maxLines="1"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:background="@drawable/square_box"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                android:id="@+id/category_workinghours"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:backgroundTint="@null"
+                android:layout_height="wrap_content"
+                android:hint="@string/workinghourchange"
+                android:textColorHint="@color/black"
+                app:hintTextAppearance="@style/CustomTextAppearance1"
+                android:textColorHighlight="@color/black"
+                android:layout_margin="@dimen/_3sdp"
+                android:textSize="@dimen/_15sdp"
+                android:textColor="@color/black"
+                android:background="@color/background"
+                android:popupBackground="@color/background"
+                />
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:background="@drawable/square_box"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/messageTextInputLayout9"
+             android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/black"
+                android:layout_margin="@dimen/_5sdp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/requiredlaborupdate"
+                    android:editable="false"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_15sdp"
+                    android:id="@+id/textactivitytyp"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rg_interestedonworking"
+                    android:layout_column="0"
+                  android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal"
+                    android:layout_span="3">
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radio_daily"
+                        android:checked="true"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black"
+                        android:text="@string/daily"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/radio_weekly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/weekly"></RadioButton>
+                    <RadioButton
+                        android:id="@+id/radio_monthly"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_12sdp"
+                        android:text="@string/monthly"></RadioButton>
+
+                </RadioGroup>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:text="@string/submit"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_submitcontractor"
+            android:layout_margin="@dimen/_18sdp"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/capsulebutton"
+            ></Button>
+
+
+
+
+    </LinearLayout>
+
+</ScrollView>

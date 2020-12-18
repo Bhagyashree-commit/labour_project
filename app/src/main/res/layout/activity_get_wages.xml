@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Labour.GetWages"
+    android:background="@color/blue_200">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="@string/sendwages"
+            android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fetchname"
+            android:textColor="@color/buttoncolor"
+            android:text="username"
+            android:layout_toRightOf="@+id/fetchname1"
+            android:textSize="@dimen/md_15"
+            android:layout_margin="@dimen/md_5"
+            android:visibility="invisible"
+            android:gravity="center"></TextView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview_getwages"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+         />
+    </RelativeLayout>
+
+</LinearLayout>
+</LinearLayout>

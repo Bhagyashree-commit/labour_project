@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/_16sdp"
+    android:paddingLeft="@dimen/_16sdp"
+    android:paddingRight="@dimen/_16sdp"
+    android:paddingTop="@dimen/_16sdp"
+    >
+
+    <ImageView
+        android:layout_marginTop="@dimen/_10sdp"
+        android:id="@+id/header_icon"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logof"/>
+
+    <RelativeLayout
+
+        android:layout_marginTop="@dimen/_5sdp"
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/header_icon">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/_16sdp"
+            android:paddingRight="@dimen/_16sdp"
+            android:paddingTop="@dimen/_16sdp"
+            android:weightSum="1">
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textColor="@color/red_900"
+                android:textSize="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="Register as"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_20sdp"
+                android:id="@+id/relContractor"
+                android:background="@drawable/capsulebutton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/check"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="Contractor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30ssp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relLabourer"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/capsulebutton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/check"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+                <TextView
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="Labourer "
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30ssp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relArchitect"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/capsulebutton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/check"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="Architect"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30ssp"/>
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/relengineer"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/capsulebutton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/check"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="Engineer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30ssp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/relowner"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/capsulebutton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/check"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="     Owner     "
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30ssp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/reldeveloper"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/capsulebutton"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp">
+
+                <ImageView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/check"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_18sdp"
+                    android:textColor="@color/colorBackground"
+                    android:text="     Developer      "
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_30ssp"/>
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

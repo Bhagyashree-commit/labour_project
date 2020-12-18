@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue_200"
+    tools:context=".Labour.WagesApprovalRequest">
+
+    <RelativeLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="@string/wages"
+            android:textColor="#FFFFFF"></TextView></RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/md_20">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            >
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetchname1"
+        android:textColor="@color/buttoncolor"
+        android:text="Registerd Name :"
+        android:textSize="@dimen/md_15"
+        android:layout_margin="@dimen/md_5"
+        ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fetchname"
+            android:textColor="@color/buttoncolor"
+            android:text="username"
+            android:layout_toRightOf="@+id/fetchname1"
+            android:textSize="@dimen/md_15"
+            android:layout_margin="@dimen/md_5"
+            android:gravity="center"></TextView>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/idmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/area"
+                android:layout_marginTop="@dimen/md_25"
+                android:id="@+id/tv12"
+                android:paddingLeft="@dimen/md_20"
+                android:paddingRight="@dimen/md_20"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/colortext"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jobtitle1"
+                android:layout_marginLeft="@dimen/md_25"
+                android:layout_toRightOf="@+id/tv12"
+                android:layout_marginTop="@dimen/md_25"
+                android:id="@+id/fetchjobtitleappliedmoney"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/colortext"
+                ></TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/md_10">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/md_20"
+                android:paddingRight="@dimen/md_20"
+                android:text="@string/jobwages1"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20" />
+
+            <TextView
+                android:id="@+id/fetchjobwagesappliedmoney1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/cname"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/lname"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/fetchjobwagesappliedmoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/appliedname"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/contractorID"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/md_10"
+            android:text="Click DONE If Payment Receive Otherwise Click OnHold"
+            android:layout_margin="@dimen/md_25"
+            android:textColor="@color/colortext"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <Button
+            android:id="@+id/btndone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/done"
+            android:background="@color/green_600"
+            android:textColor="@color/colorBackground"
+            android:textAllCaps="false"
+            android:layout_marginTop="@dimen/md_25"
+            android:textSize="@dimen/md_20"
+                android:padding="@dimen/md_15"
+            />
+            <Button
+                android:id="@+id/btnhold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/onhold"
+                android:background="@color/orange_600"
+                android:textColor="@color/colorBackground"
+                android:textAllCaps="false"
+                android:padding="@dimen/md_15"
+                android:layout_marginTop="@dimen/md_25"
+                android:layout_marginLeft="@dimen/md_15"
+                android:textSize="@dimen/md_20"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

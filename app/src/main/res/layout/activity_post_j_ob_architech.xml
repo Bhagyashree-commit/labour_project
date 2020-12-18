@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Architect.PostJObArchitech"
+    android:background="@color/blue_200">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"
+            android:text="@string/postjob"
+            android:textColor="#FFFFFF"></TextView></RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_150sdp"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/imageglobal"
+                android:layout_gravity="center"
+                android:src="@drawable/logof"></ImageView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_box"
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/labortype"
+                app:hintTextAppearance="@style/CustomTextAppearance1"
+                android:textColorHint="@color/black">
+
+            >
+
+                <EditText
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:inputType="textCapCharacters"
+                    android:id="@+id/editjobttitleA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:capitalize="words"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_box"
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/fee"
+                app:hintTextAppearance="@style/CustomTextAppearance1"
+                android:textColorHint="@color/black">
+                >
+
+                <EditText
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:imeOptions="actionDone"
+                    android:maxLines="10"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:id="@+id/editjobdetailsA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:capitalize="words" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_box"
+            android:layout_marginTop="@dimen/md_25">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/CustomTextAppearance1"
+                android:textColorHint="@color/black"
+                android:hint="@string/service">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:background="@null"
+                    android:gravity="center"
+                    android:backgroundTint="@null"
+                    android:id="@+id/editjobwagesA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:capitalize="words"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="@dimen/_35sdp"
+            android:layout_marginRight="@dimen/_35sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/square_box"
+           android:layout_marginTop="@dimen/_25sdp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hintTextAppearance="@style/CustomTextAppearance1"
+                android:textColorHint="@color/black"
+            android:hint="@string/specific">
+
+                <EditText
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:background="@null"
+                    android:backgroundTint="@null"
+                    android:capitalize="words"
+                    android:inputType="textCapCharacters"
+                    android:id="@+id/editjobareaA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <Button
+            android:text="@string/post"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submijobdataA"
+            android:layout_gravity="center"
+            android:layout_margin="25dp"
+            android:textColor="#ffffff"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            android:background="@drawable/capsulebutton"
+            ></Button>
+    </LinearLayout>
+    </LinearLayout>
+</ScrollView>

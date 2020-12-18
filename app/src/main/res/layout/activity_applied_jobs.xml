@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="@color/blue_200"
+tools:context=".Contractor.AppliedJobs"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:layout_centerInParent="true"
+            android:text="@string/appreject"
+            android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycleViewjobs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:layout_margin="@dimen/md_15"
+    android:outlineSpotShadowColor="@color/red_400"
+    android:divider="@color/colorPrimaryDark"
+    android:dividerHeight="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".Contractor.WagesRequest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+       >
+        <RelativeLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gradient"
+            >
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="@string/wagess"
+                android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_20sdp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv12"
+                android:textSize="@dimen/md_20"
+                android:text="@string/area"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/orange_900"></TextView>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/fetchjobtitlewages"
+                android:textSize="@dimen/md_20"
+                android:editable="false"
+                android:textColor="@color/colortext"
+                ></EditText>
+
+
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/jobwages1"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20" />
+
+            <EditText
+                android:id="@+id/fetchjobwageswages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/tv2"
+                android:editable="false"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></EditText>
+
+            <TextView
+                android:id="@+id/tv18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/labourname"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20" />
+
+            <EditText
+                android:id="@+id/fetchlaborIDwages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:editable="false"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></EditText>
+
+            <TextView
+                android:id="@+id/tv19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/labourid"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20" />
+            <EditText
+                android:id="@+id/appliedbyid"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"
+                android:editable="false"
+                android:layout_height="wrap_content"
+                ></EditText>
+            <TextView
+                android:id="@+id/contractornamewages"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              ></TextView>
+
+
+            <TextView
+                android:id="@+id/createdbyid"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             ></TextView>
+            <TextView
+
+                android:id="@+id/idwages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"></TextView>
+
+
+
+        </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/btnsendmoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/sendmoney"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/colorBackground"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/_15sdp"
+                    android:layout_gravity="center"
+                    android:background="@color/green_600"/>
+
+    </LinearLayout>
+
+
+</ScrollView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context=".Contractor.VerifyPhoneContractor">
+
+  <RelativeLayout
+      android:id="@+id/relativeLayout_cc"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:background="@color/colorBackground"
+      android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/imageglobal"
+        android:layout_width="500dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/buldudelogo"/>
+
+  </RelativeLayout>
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="120dp"
+      android:layout_below="@id/relativeLayout_cc"
+      android:layout_marginTop="@dimen/md_10"
+      android:background="@color/colorBackground" />
+
+  <RelativeLayout
+      android:id="@+id/container1"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_below="@id/imageView"
+      android:orientation="vertical"
+      android:padding="20dp">
+
+    <TextView
+        android:id="@+id/textViewcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Wait for the code I sent You"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorPrimary" />
+
+    <ProgressBar
+        android:id="@+id/progressbar23"
+        android:layout_below="@id/textViewcon"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTextCode_con"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progressbar23"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:digits="0123456789"
+        android:drawablePadding="10dp"
+        android:hint="enter verification code"
+        android:inputType="phone"
+        android:maxLength="10" />
+
+    <Button
+        android:id="@+id/buttonSignIn23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCode_con"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@color/buttoncolor"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:textColor="#cdd8f1" />
+
+  </RelativeLayout>
+</RelativeLayout>

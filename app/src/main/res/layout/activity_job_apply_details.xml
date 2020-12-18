@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Contractor.JobApplyDetails"
+    android:background="@color/blue_200">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gradient"
+            >
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="@string/approve_rej"
+                android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/_15sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"></TextView>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/area"
+            android:id="@+id/tv12"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/md_20"
+            android:textColor="@color/orange_900"></TextView>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jobtitle1"
+            android:layout_marginLeft="@dimen/_10sdp"
+           android:editable="false"
+            android:id="@+id/fetchjobtitleapplied"
+            android:textSize="@dimen/md_20"
+            android:textColor="@color/colortext"
+            ></EditText>
+
+
+
+
+        <TextView
+            android:id="@+id/tv13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/md_20"
+            android:text="@string/type"
+            android:layout_marginLeft="@dimen/_10sdp"
+
+            android:textColor="@color/orange_900"></TextView>
+        <EditText
+            android:id="@+id/fetchjobdetailsapplied"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/md_20"
+            android:editable="false"
+            android:layout_toRightOf="@+id/tv13"
+            android:text="@string/jobdetails1"
+            android:textColor="@color/colortext"></EditText>
+
+        <TextView
+            android:id="@+id/tv14"
+            android:layout_weight="0.4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="@string/pincode1"
+            android:textColor="@color/orange_900"
+            android:textSize="@dimen/md_20"></TextView>
+        <EditText
+            android:id="@+id/fetchjobareaapplied"
+            android:layout_width="match_parent"
+            android:editable="false"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tv14"
+            android:text="@string/jobarea1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/colortext"
+            android:textSize="@dimen/md_20"></EditText>
+
+
+
+
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/jobwages1"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/orange_900"
+            android:textSize="@dimen/md_20" />
+
+        <EditText
+            android:id="@+id/fetchjobwagesapplied"
+            android:layout_width="match_parent"
+            android:editable="false"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textColor="@color/colortext"
+            android:textSize="@dimen/md_20"></EditText>
+
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Applied By :"
+                android:textColor="@color/orange_900"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:textSize="@dimen/md_20" />
+
+            <EditText
+                android:visibility="gone"
+                android:id="@+id/fetchappliedbyname"
+                android:layout_width="match_parent"
+                android:editable="false"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/tv19"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></EditText>
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/date"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20" />
+
+            <EditText
+                android:id="@+id/fetchapplieddate"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/tv18"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></EditText>
+
+
+
+            <TextView
+                android:id="@+id/tv188"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/labourname"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20" />
+
+            <EditText
+                android:id="@+id/fetchlaborname"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/tv188"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></EditText>
+
+
+            <TextView
+                android:id="@+id/tv189"
+                android:layout_weight="0.4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:text="@string/cname"
+                android:textColor="@color/orange_900"
+                android:textSize="@dimen/md_20" />
+
+            <EditText
+                android:layout_weight="0.6"
+                android:id="@+id/fetchcontractorname"
+                android:editable="false"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/tv189"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></EditText>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnapprove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/approve"
+                android:background="@color/green_600"
+                android:textColor="@color/colorBackground"
+                android:textAllCaps="false"
+                android:padding="@dimen/_5sdp"
+                android:textSize="@dimen/md_20"
+                />
+            <Button
+                android:id="@+id/btnreject"
+                android:layout_toRightOf="@+id/btnapprove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reject"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:textAllCaps="false"
+                android:padding="@dimen/_5sdp"
+                android:background="@color/red_400"
+                android:textColor="@color/colorBackground"
+                android:textSize="@dimen/md_20"
+              >
+            </Button>
+        </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

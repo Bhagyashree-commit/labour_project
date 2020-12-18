@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Labour.Register_labour"
+    android:background="@drawable/new_gradient">
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="5dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="@dimen/md_25"
+        android:layout_gravity="center"
+
+        android:gravity="center">
+
+      <ImageView
+          android:layout_width="@dimen/_150sdp"
+          android:layout_height="@dimen/_120sdp"
+          android:id="@+id/imageglobal"
+          android:layout_gravity="center"
+          android:src="@drawable/logof"></ImageView>
+
+
+    </LinearLayout>
+
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+    <LinearLayout
+      android:layout_marginLeft="@dimen/_25sdp"
+      android:layout_marginRight="@dimen/_25sdp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/_15sdp">
+    <ImageView
+        android:layout_marginTop="@dimen/_25sdp"
+        app:srcCompat="@drawable/user"
+        android:layout_width="@dimen/_20sdp"
+        android:tint="@color/white"
+        android:layout_height="@dimen/_20sdp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:textColorHint="@color/white"
+        app:hintTextAppearance="@style/CustomTextAppearance"
+        >
+
+
+      <EditText
+          android:imeOptions="actionDone"
+          android:maxLines="1"
+          android:textSize="@dimen/_15sdp"
+          android:textColor="@color/white"
+          android:id="@+id/editTextregistername"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_margin="@dimen/_10sdp"
+          android:capitalize="words"
+          tools:ignore="MissingConstraints"
+
+          />
+
+    </com.google.android.material.textfield.TextInputLayout>
+  </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/md_25"
+        android:layout_marginLeft="@dimen/md_25"
+        android:layout_marginRight="@dimen/md_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+      <ImageView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="@dimen/_25sdp"
+          android:tint="@color/white"
+          app:srcCompat="@drawable/mob" />
+      <EditText
+          android:visibility="gone"
+          android:editable="false"
+          android:layout_marginTop="@dimen/_14sdp"
+          android:text="+91"
+          android:layout_marginRight="@dimen/_minus15sdp"
+          android:backgroundTint="@color/white"
+          android:textSize="@dimen/_15sdp"
+          android:textColor="@color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"></EditText>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/mobnum"
+          android:textColorHint="@color/white"
+          app:hintTextAppearance="@style/CustomTextAppearance"
+          android:drawablePadding="5dp">
+
+        <EditText
+            android:id="@+id/editTextregisteremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:digits="0123456789"
+            android:imeOptions="actionDone"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/md_25"
+        android:layout_marginLeft="@dimen/md_25"
+        android:layout_marginRight="@dimen/md_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+      <ImageView
+          android:tint="@color/white"
+          android:layout_marginTop="@dimen/_25sdp"
+          app:srcCompat="@drawable/password"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"/>
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/password"
+          app:passwordToggleTint="@color/white"
+          android:textColorHint="@color/white"
+          app:hintTextAppearance="@style/CustomTextAppearance"
+          app:passwordToggleEnabled="true">
+
+        <EditText
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15sdp"
+            android:id="@+id/editTextregisterpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:inputType="textPassword"
+
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/md_25"
+        android:layout_marginLeft="@dimen/md_25"
+        android:layout_marginRight="@dimen/md_25"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+      <ImageView
+          android:tint="@color/white"
+          android:layout_marginTop="@dimen/_25sdp"
+          app:srcCompat="@drawable/password"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"/>
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColorHint="@color/white"
+          android:hint="@string/cpass"
+          app:passwordToggleTint="@color/white"
+          app:hintTextAppearance="@style/CustomTextAppearance"
+          app:passwordToggleEnabled="true">
+
+        <EditText
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:id="@+id/editTextregisterconfirmpassword11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:inputType="textPassword"
+            android:editable="false"
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp">
+      <ImageView
+          android:layout_marginTop="@dimen/_25sdp"
+          app:srcCompat="@drawable/user"
+          android:tint="@color/white"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"/>
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:hint="@string/refrename"
+          android:textColorHint="@color/white"
+          app:hintTextAppearance="@style/CustomTextAppearance"
+          >
+
+
+        <EditText
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/white"
+            android:id="@+id/editrefredname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:capitalize="words"
+            tools:ignore="MissingConstraints"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginLeft="@dimen/_25sdp"
+        android:layout_marginRight="@dimen/_25sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp">
+      <ImageView
+          android:tint="@color/white"
+          android:layout_marginTop="@dimen/_25sdp"
+          app:srcCompat="@drawable/mob"
+          android:layout_width="@dimen/_20sdp"
+          android:layout_height="@dimen/_20sdp"/>
+      <EditText
+          android:visibility="gone"
+          android:editable="false"
+          android:layout_marginTop="@dimen/_14sdp"
+          android:text="+91"
+          android:layout_marginRight="@dimen/_minus15sdp"
+          android:backgroundTint="@color/black"
+          android:textSize="@dimen/_15sdp"
+          android:textColor="@color/white"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"></EditText>
+
+      <com.google.android.material.textfield.TextInputLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColorHint="@color/white"
+          android:hint="@string/refcode"
+          app:hintTextAppearance="@style/CustomTextAppearance"
+          >
+
+
+        <EditText
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+            android:textSize="@dimen/_15sdp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:textColor="@color/white"
+            android:id="@+id/editrefercode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp"
+            android:capitalize="words"
+            tools:ignore="MissingConstraints"
+
+            />
+
+      </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+  </LinearLayout>
+
+    <Button
+        android:text="@string/signup"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_registerapp12"
+        android:layout_margin="@dimen/_15sdp"
+        android:textColor="#ffffff"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/_15sdp"
+        android:background="@drawable/capsulebutton"
+        ></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/_25sdp"
+        android:gravity="center">
+      <TextView
+          android:textStyle="bold"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/alreadymember"
+          android:textAllCaps="true"
+          android:textSize="@dimen/_15sdp"
+          android:textColor="@color/white"
+          />
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/textView_existing_user"
+          android:text="@string/existinguser"
+          android:layout_marginLeft="@dimen/_10sdp"
+          android:textStyle="bold"
+          android:textSize="@dimen/_15sdp"
+          android:textColor="@color/red_900"
+          />
+
+    </LinearLayout>
+  </LinearLayout>
+</ScrollView>

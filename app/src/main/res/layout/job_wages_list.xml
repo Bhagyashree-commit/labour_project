@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/md_20"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="@color/background"
+    card_view:cardCornerRadius="@dimen/_10sdp"
+    card_view:cardElevation="@dimen/_15sdp"
+    card_view:cardUseCompatPadding="true">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_margin="@dimen/_15sdp">
+        <TextView
+            android:id="@+id/jobtitlewages1"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/colortext"
+            android:text="@string/area"/>
+
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/jobtitlewages"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Small.Inverse"
+            android:textSize="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/jobtitlewages1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colortext" />
+
+
+        <TextView
+            android:id="@+id/textjobidwages"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+             />
+
+        <TextView
+            android:id="@+id/jobwageswages1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_below="@id/jobtitlewages"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/colortext"
+            android:text="@string/jobwages1"
+            android:textSize="@dimen/_13sdp"
+            />
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/jobwageswages"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/jobwageswages1"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/jobtitlewages"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13sdp"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:background="@drawable/gradient"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/applied_by1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jobwageswages1"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/colortext"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"
+            android:text="@string/labourname"
+            />
+
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/laborname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jobwageswages"
+            android:layout_toRightOf="@id/applied_by1"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/colortext"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"/>
+
+
+        <TextView
+            android:id="@+id/appl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/laborname"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:text="@string/labornum"
+            android:textColor="@color/colortext"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"/>
+
+        <TextView
+            android:maxLines="1"
+            android:id="@+id/applied_by"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/colortext"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:textSize="@dimen/_13sdp"
+            android:layout_toRightOf="@+id/appl"
+            android:layout_below="@+id/laborname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:id="@+id/wages_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applied_by"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/red_400"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Money Transfer Done"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"/>
+
+        <TextView
+            android:id="@+id/contractorname"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+         />
+        <TextView
+            android:id="@+id/createdbyid"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

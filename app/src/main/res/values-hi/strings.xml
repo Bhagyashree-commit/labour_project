@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">श्रम प्रबंधन</string>
+    <string name="email">ईमेल</string>
+    <string name="password">पासवर्ड</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="newuser"> यहां रजिस्टर करें..</string>
+    <string name="loginas">इससे लॉगिन करें</string>
+    <string name="enginerdashboard">इंजीनियर डैशबोर्ड</string>
+    <string name="title">नौकरी का नाम</string>
+    <string name="laborprofile">कामगार प्रोफ़ाइल</string>
+    <string name="forgetpass">पासवर्ड भूल गए?</string>
+
+    <string name="ownerdashboard">ओनर डैशबोर्ड</string>
+    <string name="ownerprofile">मालिक प्रोफ़ाइल</string>
+    <string name="engprofile">इंजीनियर प्रोफ़ाइल</string>
+
+    <string name="photo">तस्वीर</string>
+    <string name="gallery">गेलरी</string>
+    <string name="pdf">पीडीएफ</string>
+    <string name="brochure">विवरणिका</string>
+    <string name="particulararea1">कार्य स्थान क्षेत्र 1</string>
+    <string name="particulararea2">कार्य स्थान क्षेत्र 2</string>
+    <string name="devdashboard">विकासकर्ता डैशबोर्ड</string>
+    <string name="devprofile">डेवलपर शख्सियत</string>
+    <string name="jobdetail">नौकरी विवरण</string>
+    <string name="flowcharts">फ्लो चार्ट</string>
+    <string name="service">सेवा</string>
+    <string name="fee">FEE %</string>
+    <string name="specific">विशिष्ट विशेषज्ञता</string>
+    <string name="expertsing">साल में अनुभव</string>
+    <string name="approvejob">APPROVE / REJECT JOB</string>
+
+
+    <string name="jobstatsss">कार्य स्वीकार करें</string>
+    <string name="pincode1">पिनकोड दर्ज करें</string>
+    <string name="workinghourchange">साइट पर काम कर रहा है</string>
+    <string name="requiredlaborupdate">आवश्यक श्रम पर</string>
+    <string name="addresspin">पिनकोड दर्ज करें</string>
+    <string name="workinghoursite">साइट पर काम कर रहा है</string>
+    <string name="nameofwork">काम का नाम</string>
+    <string name="approvedfrom">अपरोक्ष रूप से</string>
+    <string name="servicerequired">सेवा की आवश्यकता</string>
+    <string name="don_t_have_an_account">सदस्य नहीं है?</string>
+
+
+
+
+    <string name="jobpostedby">जॉब द्वारा पोस्ट किया गया :</string>
+    <string name="labourdashboard">श्रम डैशबोर्ड</string>
+    <string name="done">किया हुआ</string>
+    <string name="onhold">होल्ड पर</string>
+
+    <string name="payment">जॉब WAGES</string>
+    <string name="area">नौकरी क्षेत्र</string>
+    <string name="time">साइट पर समय</string>
+    <string name="string">नवीनतम जॉब पोस्ट को कम देखा जाता है</string>
+    <string name="paysuccess">पिछला भुगतान स्थिति सफल</string>
+
+    <string name="date">दिनांक : </string>
+    <string name="contractorname">
+ठेकेदार का नाम : </string>
+    <string name="jobexpired">ठेकेदार का नाम</string>
+    <string name="postfee">पोस्ट शुल्क</string>
+    <string name="acceptjob">कार्य स्वीकार करें</string>
+    <string name="flowchart">फ्लो चार्ट</string>
+    <string name="postworkjob">पोस्ट कार्य / नौकरी</string>
+    <string name="acceptproposal">स्वीकार परियोजना</string>
+    <string name="rating">रेटिंग</string>
+
+    <string name="mobnum">मोबाइल नंबर दर्ज करें</string>
+    <string name="existinguser">    यहां लॉगिन करें..</string>
+    <string name="signup">साइन अप करें</string>
+    <string name="architectprofile">वास्तुकला का आधार</string>
+
+    <string name="username">उपयोगकर्ता नाम</string>
+    <string name="cpass">पासवर्ड की पुष्टि करें</string>
+    <string name="labour">लेबर</string>
+    <string name="architectdashboard">वास्तुकला डैशबोर्ड</string>
+    <string name="contractor">ठेकेदार</string>
+    <string name="labortype">श्रम का प्रकार</string>
+
+    <string name="age">उम्र दर्ज करें</string>
+    <string name="address">पोस्टल एड्रेस दर्ज करें</string>
+    <string name="gender">लिंग चुनें</string>
+    <string name="male">पुरुष</string>
+    <string name="female">महिला</string>
+    <string name="wage">मजदूरी दर दर्ज करें</string>
+    <string name="hour">कार्य समय दर्ज करें</string>
+    <string name="transport">परिवहन का तरीका दर्ज करें</string>
+    <string name="particulararea">विशेष क्षेत्र में काम करने के इच्छुक हैं</string>
+    <string name="daily">रोज</string>
+    <string name="weekly">साप्ताहिक</string>
+    <string name="monthly">मासिक</string>
+    <string name="category">श्रम की श्रेणी का चयन करें</string>
+    <string name="welcomelabor">आपका स्वागत है BUILDUDE लेबर डैशबोर्ड में, नवीनतम जॉब ऑफर के लिए कृपया निम्नलिखित भरें</string>
+    <string name="register">साइन अप करें</string>
+    <string name="workmode">काम करने के इच्छुक हैं</string>
+    <string name="welcomecontractor">आपका स्वागत है BUILDUDE ठेकेदार डैशबोर्ड कृपया लेबर असाइन करने के लिए भरें</string>
+    <string name="workinghour">साइट पर काम के घंटे</string>
+    <string name="requiredlabor">मजदूरों की आवश्यकता  </string>
+    <string name="areaofoperation">संचालन का क्षेत्र</string>
+    <string name="submit">अधीनता स्वीकार करना</string>
+    <string name="sendotp">
+OTP भेजें</string>
+    <string name="reset"> रीसेट</string>
+    <string name="forget">अपना पासवर्ड भूल गए हैं?</string>
+    <string name="enter">
+अपना मोबाइल नंबर दर्ज करें और हम आपको अपना पासवर्ड रीसेट करने के लिए कोड भेजेंगे</string>
+    <string name="resetpass">अपना पासवर्ड रीसेट करें</string>
+    <string name="newpass">नया पासवर्ड</string>
+    <string name="conpass">पासवर्ड की पुष्टि कीजिये</string>
+
+    <string name="logout">लॉग आउट</string>
+    <string name="welocme">आपका स्वागत है </string>
+    <string name="presentedby">द्वारा प्रस्तुत</string>
+
+    <string name="contractormain">ठेकेदार</string>
+    <string name="jobstatustt">नौकरी के लिए आपका अनुरोध स्वीकृत है</string>
+
+    <string name="latestjob">नवीनतम जॉब पोस्ट नीचे दिखाए गए हैं</string>
+    <string name="wagess">वेतन</string>
+    <string name="jobstatus">कार्य स्थिति</string>
+    <string name="sendwages">वेतन भेजें</string>
+
+
+
+    <string name="labormain">मज़दूर</string>
+    <string name="architectmain">वास्तुकार</string>
+    <string name="engineermain">इंजीनियर</string>
+    <string name="developermain">डेवलपर</string>
+    <string name="owenermain">मालिक</string>
+
+
+    <string name="click">लॉगिन / पंजीकरण के लिए नीचे क्लिक करें</string>
+    <string name="title_activity_maps">Map</string>
+
+
+    <string name="title_activity_map_tracking">मानचित्र मार्ग ट्रैकिंग</string>
+        <string name="track_path_on_map">पैदल चलें और मानचित्र पर अपना रास्ता देखें</string>
+    <string name="permission_notice">
+कृपया ध्यान दें कि यदि आप चलते या दौड़ते समय अपना स्थान मानचित्र पर बनाना चाहते हैं तो आपकी स्थान अनुमति आवश्यक है</string>
+    <string name="permission_title">
+स्थान अनुमति अस्वीकृत</string>
+    <string name="cancel_permission_notice">
+वाह, कृपया फिर से आएं जब आपको इसकी आवश्यकता हो और अनुमति प्रदान करें</string>
+
+    <string name="location">कामाचे स्थान</string>
+    <string name="jobtitle">
+नौकरी का शीर्षक दर्ज करें</string>
+
+    <string name="jobposting">
+काम का नाम
+</string>
+
+    <string name="jobdetails">
+कार्य क्षेत्र</string>
+    <string name="jobwages">
+जॉब वेज दर्ज करें</string>
+    <string name="scope">
+काम की गुंजाइश</string>
+    <string name="jobarea">
+जॉब एरिया डालें</string>
+
+    <string name="post">
+नौकरी पोस्ट करें</string>
+    <string name="jobtitle1">
+नौकरी का नाम :</string>
+    <string name="type">श्रम प्रकार: </string>
+    <string name="approve_rej">
+नौकरी के लिए आवेदन / समीक्षा </string>
+    <string name="jobdetails1">Job Details : </string>
+    <string name="jobarea1">
+नौकरी करने का स्थान: </string>
+    <string name="jobwages1">
+नौकरी की मजदूरी :</string>
+    <string name="clicktoapply">
+नौकरी के लिए आवेदन करने के लिए क्लिक करें</string>
+    <string name="start">
+स्थान अपडेट शुरू करें </string>
+
+<string name="registername">
+स्वागत है  </string>
+    <string name="reg_id">
+    पंजीकृत आई.डी. :</string>
+    <string name="pjob">
+नौकरी पोस्ट करें</string>
+    <string name="profile">प्रोफ़ाइल</string>
+    <string name="appreject">
+स्वीकृत/अस्वीकृत</string>
+    <string name="paymetsend">भुगतान</string>
+    <string name="alreadymember">पहले से सदस्य हैं ?</string>
+    <string name="already">पहले से सदस्य हैं ?</string>
+
+    <string name="registermember">पहले से सदस्य हैं ?</string>
+
+    <string name="alertdialog">पुष्टि चेतावनी</string>
+    <string name="yes">हाँ</string>
+    <string name="no">नहीं</string>
+
+    <string name="postjob1">पद विवरण</string>
+
+    <string name="wages">
+वेतन</string>
+    <string name="job">काम क्षेत्र</string>
+    <string name="pincode">पिन कोड : </string>
+    <string name="labourname">मज़दूर नाम: </string>
+    <string name="status">स्थिति : </string>
+    <string name="cname">ठेकेदार नाम: </string>
+    <string name="dateofappy">तारीख : </string>
+    <string name="approve">मंजूर</string>
+    <string name="reject"> अस्वीकृत </string>
+    <string name="sendmoney">
+पैसे भेजो</string>
+    <string name="joboffer">
+नौकरी का प्रस्ताव</string>
+    <string name="review">
+समीक्षा</string>
+    <string name="jobstats">काम स्थिति</string>
+    <string name="paymentsss">भुगतान</string>
+
+
+    <string name="paymentStatus">भुगतान की स्थिति</string>
+
+    <string name="refrename">
+रेफ़रल दर्ज करें</string>
+    <string name="refcode">
+रेफरल पर्सन मोबाइल नंबर डालें</string>
+
+
+    <string name="postjob">नौकरी पोस्ट</string>
+    <string name="contractordashboard">ठेकेदार डैशबोर्ड</string>
+    <string name="contractorprofile">ठेकेदार प्रोफाइल</string>
+    <string name="alljobs">सारी नौकरियां</string>
+    <string name="tracklabor">ट्रैक मजदूर</string>
+    <string name="starttracking">ट्रैकिंग शुरू करें</string>
+    <string name="giverating">रेटिंग दें</string>
+    <string name="labornum">मज़दूर आईडी</string>
+    <string name="alertmeg">चेतावनी</string>
+    <string name="meg">
+क्या आप लॉग आउट करना चाहते हैं?</string>
+    <string name="ya">हाँ</string>
+    <string name="na">
+नहीं</string>
+    <string name="select">
+भाषा का चयन करें</string>
+    <string name="labourid">श्रमदाता आईडी :</string>
+
+  <!--  <string name="newuser">?????</string>
+-->
+</resources>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".Architect.WagesRequestAR">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/gradient"
+            >
+
+            <TextView
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:text="@string/wages"
+                android:textAllCaps="true"
+                android:textColor="#FFFFFF"></TextView></RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/idwagesAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/md_25"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"
+                android:visibility="invisible"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jobtitle1"
+                android:layout_marginTop="@dimen/md_25"
+                android:id="@+id/tv12"
+                android:paddingLeft="@dimen/md_20"
+                android:paddingRight="@dimen/md_20"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/colortext"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jobtitle1"
+                android:layout_marginLeft="@dimen/md_25"
+                android:layout_toRightOf="@+id/tv12"
+                android:layout_marginTop="@dimen/md_25"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/fetchjobtitlewagesAR"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/colortext"
+                ></TextView>
+
+        </RelativeLayout>
+
+
+        <!-- <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             >
+
+             <TextView
+                 android:id="@+id/tv14"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentBottom="true"
+                 android:text="@string/jobarea1"
+                 android:paddingLeft="@dimen/md_20"
+                 android:paddingRight="@dimen/md_20"
+                 android:textColor="@color/colortext"
+                 android:textSize="@dimen/md_20"></TextView>
+             <TextView
+                 android:id="@+id/fetchjobareawages"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_toRightOf="@+id/tv14"
+                 android:layout_alignParentBottom="true"
+                 android:text="@string/jobarea1"
+                 android:textColor="@color/colortext"
+                 android:textSize="@dimen/md_20"></TextView>
+
+         </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/md_10">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-3dp"
+                android:text="@string/jobwages1"
+                android:paddingLeft="@dimen/md_20"
+                android:paddingRight="@dimen/md_20"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20" />
+
+            <TextView
+                android:id="@+id/fetchjobwageswagesAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+
+        </RelativeLayout>
+        <!--<RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/md_10">
+
+            <TextView
+                android:id="@+id/tv19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-3dp"
+                android:text="Applied By :"
+                android:paddingLeft="@dimen/md_20"
+                android:paddingRight="@dimen/md_20"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20" />
+
+            <TextView
+                android:id="@+id/fetchappliedbywages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+
+                android:layout_toRightOf="@+id/tv19"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+
+        </RelativeLayout>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/md_10">
+
+            <TextView
+                android:id="@+id/tv18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-3dp"
+                android:layout_marginLeft="20dp"
+                android:text="Labor Name :"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20" />
+
+            <TextView
+                android:id="@+id/fetchlaborIDwagesAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_marginLeft="@dimen/md_25"
+                android:layout_toRightOf="@+id/tv18"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/contractornamewagesAR"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/appliedbyidAR"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></TextView>
+            <TextView
+                android:id="@+id/createdbyidAR"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ></TextView>
+
+
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnsendmoneyAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="@string/sendmoney"
+            android:layout_marginTop="@dimen/md_25"
+            android:textColor="@color/colorBackground"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:background="@drawable/gradient"/>
+        <!-- <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:orientation="horizontal"
+             android:layout_gravity="center">
+
+             <Button
+                 android:id="@+id/btnapprove"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Approve"
+                 android:background="@color/buttoncolor"
+                 android:textColor="@color/colorBackground"
+                 android:textAllCaps="false"
+                 app:cornerRadius="20dp"
+                 android:layout_marginTop="@dimen/md_25"
+                 android:textSize="@dimen/md_20"
+                 />
+             <Button
+                 android:id="@+id/btnreject"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Reject"
+                 android:textAllCaps="false"
+                 android:background="@color/buttoncolor"
+                 android:textColor="@color/colorBackground"
+                 android:textSize="@dimen/md_20"
+                 android:layout_marginLeft="@dimen/md_20"
+                 android:layout_marginTop="@dimen/md_25">
+             </Button>
+         </LinearLayout>-->
+
+    </LinearLayout>
+
+
+</ScrollView>

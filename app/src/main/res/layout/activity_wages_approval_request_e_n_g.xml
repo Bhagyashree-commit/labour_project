@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".Labour.WagesApprovalRequest">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/md_20">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/idmoneyENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/md_25"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"
+                android:visibility="invisible"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jobtitle1"
+                android:layout_marginTop="@dimen/md_25"
+                android:id="@+id/tv12"
+                android:paddingLeft="@dimen/md_20"
+                android:paddingRight="@dimen/md_20"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/colortext"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/jobtitle1"
+                android:layout_marginLeft="@dimen/md_25"
+                android:layout_toRightOf="@+id/tv12"
+                android:layout_marginTop="@dimen/md_25"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/fetchjobtitleappliedmoneyENG"
+                android:textSize="@dimen/md_20"
+                android:textColor="@color/colortext"
+                ></TextView>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/md_10">
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:paddingLeft="@dimen/md_20"
+                android:paddingRight="@dimen/md_20"
+                android:text="@string/jobwages1"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20" />
+
+            <TextView
+                android:id="@+id/fetchjobwagesappliedmoney1ENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/cnameENG"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/lnameENG"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/fetchjobwagesappliedmoneyENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/appliednameENG"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+            <TextView
+                android:id="@+id/contractorIDENG"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:textColor="@color/colortext"
+                android:textSize="@dimen/md_20"></TextView>
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/md_10"
+            android:text="Click DONE If Payment Receive Otherwise Click OnHold"
+            android:layout_margin="@dimen/md_25"
+            android:textColor="@color/colortext"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+
+            <Button
+                android:id="@+id/btndoneENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:background="@drawable/gradient"
+                android:textColor="@color/colorBackground"
+                android:textAllCaps="false"
+
+                android:layout_marginTop="@dimen/md_25"
+                android:textSize="@dimen/md_20"
+                android:padding="@dimen/md_15"
+                />
+            <Button
+                android:id="@+id/btnholdENG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OnHold"
+                android:background="@drawable/gradient"
+                android:textColor="@color/colorBackground"
+                android:textAllCaps="false"
+
+                android:padding="@dimen/md_15"
+                android:layout_marginTop="@dimen/md_25"
+                android:layout_marginLeft="@dimen/md_15"
+                android:textSize="@dimen/md_20"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

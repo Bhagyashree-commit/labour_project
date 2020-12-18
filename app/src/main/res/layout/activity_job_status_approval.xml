@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue_200"
+    tools:context=".Labour.JobStatusApproval">
+    <RelativeLayout
+
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/gradient"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:textSize="20dp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="@string/jobstats"
+            android:textColor="#FFFFFF"></TextView></RelativeLayout>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fetchname1"
+            android:textColor="@color/buttoncolor"
+            android:text="Registerd Name :"
+            android:visibility="gone"
+            android:textSize="@dimen/md_15"
+            android:layout_margin="@dimen/md_5"
+            ></TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fetchname"
+            android:textColor="@color/buttoncolor"
+            android:text="username"
+            android:visibility="gone"
+            android:layout_toRightOf="@+id/fetchname1"
+            android:textSize="@dimen/md_15"
+            android:layout_margin="@dimen/md_5"
+            android:gravity="center"></TextView>
+    </RelativeLayout>
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/textcongo"
+    android:gravity="center"
+    android:layout_marginLeft="@dimen/md_50"
+    android:layout_marginRight="@dimen/md_50"
+    android:textColor="@color/colortext"
+    android:text="@string/jobstatustt"
+    android:textSize="@dimen/md_20"
+    android:layout_marginTop="@dimen/md_50"></TextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewjobsstatus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_below="@+id/textcongo"
+        android:divider="@color/colorPrimaryDark"
+        android:dividerHeight="15dp"
+      />
+
+</RelativeLayout>
