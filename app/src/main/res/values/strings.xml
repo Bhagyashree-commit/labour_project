@@ -83,7 +83,7 @@
     <string name="jobdetails">AREA OF WORK</string>
     <string name="jobwages">SCOPE OF WORK</string>
     <string name="scope">SCOPE OF WORK</string>
-    <string name="jobarea">ENTER AREA PINCODE</string>
+    <string name="jobarea">ENTER DATE AND TIME</string>
     <string name="labortype">JOB WORK</string>
     <string name="post">POST JOB</string>
     <string name="jobtitle1">JOB TITLE : </string>
@@ -91,6 +91,7 @@
     <string name="approve_rej">JOB APPROVE/REJECT </string>
     <string name="jobdetails1">JOB DETAILS : </string>
     <string name="pincode1">PIN CODE : </string>
+    <string name="datee">DATE : </string>
     <string name="jobarea1">JOB LOCATION :   </string>
     <string name="jobwages1">JOB WAGES : </string>
     <string name="start">START LOCATION UPDATE </string>
@@ -124,6 +125,10 @@
     <string name="status">STATUS : </string>
     <string name="cname">CONTRACTOR NAME:  </string>
     <string name="dateofappy">JOB POSTING DATE : </string>
+    <string name="appr">APPROVE </string>
+    <string name="notappr"> NOT APPROVE </string>
+    <string name="transferdone"> MONEY TRANSFER DONE </string>
+
     <string name="jobpostedby">JOB POSTED BY :</string>
     <string name="labourdashboard">LABOUR DASHBOARD</string>
     <string name="done">DONE</string>
@@ -135,7 +140,7 @@
     <string name="review">REVIEW</string>
     <string name="jobstats">JOB STATUS</string>
     <string name="paymentStatus">PAYMENT</string>
-    <string name="alljobs">POSTED JOBS</string>
+    <string name="alljobs">JOB SUMMARY</string>
     <string name="refrename">ENTER REFERRAL NAME</string>
     <string name="refcode">ENTER REFERRAL MOBILE NUMBER</string>
     <string name="postjob">POST DETAILS</string>
@@ -158,6 +163,7 @@
     <string name="postfee">POST DETAILS</string>
     <string name="jobposting">NAME OF WORK</string>
     <string name="acceptjob">ACCEPT JOB</string>
+    <string name="applystatus">APPLIED</string>
     <string name="flowchart">FLOW CHART</string>
     <string name="postworkjob">POST WORK/JOB</string>
     <string name="acceptproposal">ACCEPT PROPOSAL</string>
@@ -194,7 +200,9 @@
     <string name="na">NO</string>
     <string name="already">Already a Member ?</string>
     <string name="select">Select Language</string>
+    <string name="select_wage">SELECT WAGE RANGE</string>
     <string name="labourid">LABOR ID :</string>
+    <string name="title_activity_maps_two">Map</string>
 
 
 </resources>

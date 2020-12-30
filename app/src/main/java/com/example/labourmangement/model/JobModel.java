@@ -7,6 +7,16 @@ public class JobModel {
     private String job_wages;
     private String job_area;
 
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    private String status;
+
     public String getDate() {
         return date;
     }

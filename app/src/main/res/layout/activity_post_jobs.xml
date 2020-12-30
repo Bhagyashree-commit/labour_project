@@ -62,15 +62,18 @@
       <com.google.android.material.textfield.TextInputLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:hint="@string/jobdetails"
-     android:gravity="center"
-          android:textColorHint="@color/black">
 
-        <EditText
+     android:gravity="center"
+         >
+
+        <AutoCompleteTextView
+            android:hint="@string/jobdetails"
+
             android:imeOptions="actionDone"
             android:background="@null"
             android:backgroundTint="@null"
-            android:maxLines="1"
+            android:maxLines="4"
+android:lines="4"
             android:gravity="center"
             android:inputType="textCapCharacters"
             android:textAlignment="center"
@@ -187,52 +190,27 @@
         android:layout_marginRight="@dimen/_35sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:background="@drawable/square_box"
         android:layout_marginTop="@dimen/_25sdp"
         android:orientation="vertical">
 
 
 
-      <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+      <Spinner
           android:id="@+id/wageratespinnereditjobwages"
-          android:visibility="gone"
+
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:hint="@string/wage"
+          android:textAlignment="center"
           android:gravity="center"
-          android:textSize="@dimen/_15sdp"
+          android:layout_gravity="center"
+          android:spinnerMode="dialog"
+          android:textSize="@dimen/_20sdp"
+          android:hint="@string/category"
           android:textColorHint="@color/black"
           android:textColor="@color/black"
-          app:hintTextAppearance="@style/CustomTextAppearance1"
-          android:background="@color/background"
-          android:popupBackground="@color/background"
-
           />
-      <com.google.android.material.textfield.TextInputLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="@string/wage"
-          android:gravity="center"
-          android:textColorHint="@color/black">
-
-        <EditText
-            android:imeOptions="actionDone"
-            android:background="@null"
-            android:backgroundTint="@null"
-            android:maxLines="1"
-            android:gravity="center"
-            android:inputType="number"
-            android:textAlignment="center"
-            android:id="@+id/edit_wagerate"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:capitalize="words"
-            android:textSize="@dimen/_15sdp"
-            android:textColor="@color/black"
-            />
-
-      </com.google.android.material.textfield.TextInputLayout>
 
 
 
@@ -248,11 +226,13 @@
       <com.google.android.material.textfield.TextInputLayout
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:hint="@string/jobarea"
+
           android:gravity="center"
           android:textColorHint="@color/black">
 
-        <EditText
+        <TextView
+            android:textColorHint="@color/black"
+            android:hint="@string/jobarea"
             android:id="@+id/editjobarea"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -263,7 +243,7 @@
             android:gravity="center"
             android:imeOptions="actionDone"
             android:inputType="number"
-            android:maxLength="6"
+         android:singleLine="true"
             android:maxLines="1"
             android:textColor="@color/black"
             android:textSize="@dimen/_15sdp" />

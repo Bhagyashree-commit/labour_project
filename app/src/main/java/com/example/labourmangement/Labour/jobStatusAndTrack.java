@@ -241,7 +241,7 @@ btnStartUpdates.setOnClickListener(new View.OnClickListener() {
                 mLastUpdateTime = DateFormat.getTimeInstance().format(new Date());
 
                 updateLocationUI();
-                //changeStaus();
+                changeStaus();
             }
         };
 
@@ -686,10 +686,12 @@ btnStartUpdates.setOnClickListener(new View.OnClickListener() {
                 try {
                     JSONObject jsonObject = new JSONObject(response);
                     if(jsonObject.getString("success").equalsIgnoreCase("1"))
-                    { Toast.makeText(getApplicationContext(),
-                            jsonObject.getString("message") + response,
+                    {
+                        //changeStaus();
+                        Toast.makeText(getApplicationContext(),
+                            jsonObject.getString("message"),
                             Toast.LENGTH_LONG).show();
-                    changeStaus();
+
                     }
 
 

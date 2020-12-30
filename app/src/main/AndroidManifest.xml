@@ -3,6 +3,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.labourmangement">
 
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the "MyLocation" functionality.
+    -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -13,136 +18,198 @@
     <application
         android:name=".MyApplication"
         android:allowBackup="false"
-        tools:replace="android:allowBackup"
         android:icon="@drawable/logof"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
-        tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Labour.ResetPassword"
-            android:screenOrientation="portrait"></activity>
-        <activity android:name=".Labour.ForgetPassword"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.JobApplyDetailsArch"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.AllJobs"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.PaymentStatusContractor"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.PaymentStatusAR"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.WagesApprovalRequestENG"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.WagesRequestAR"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Developer.DevJobDetails"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Developer.DevJObOffer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Developer.DeveloperProfile"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Developer.LoginDeveloper"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Developer.DeveloperDashboard"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Developer.Register_developer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.JobAppliedDetailsEng"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.EngJobDetails"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.GetWagesEngineer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.JobStatusApprovalEng"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.WriteReviewEngineer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.EngJobOffer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.EngProfile"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.EngineerDashboard"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.LoginEngineer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Engineer.Register_Engineer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.JobWagesArchitech"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.AppliedJobsArchitecht"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.CheckPaymentStatus"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.PostJObArchitech"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.OwnerReview"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.WagesByOwner"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.JobApplyDetailsOwner"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.AppliedJobOwner"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.PostJobOwner"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.ArchitechProfile"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.OwnerProfile"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.ArchitechDashboard"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Architect.LoginArchitech"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".Architect.Register_Architect"
-            android:screenOrientation="portrait" />
-        <activity android:name=".Owner.OwnerDashboard"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.LoginOwner"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Owner.Register_Owner"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.WriteReview" />
-        <activity android:name=".Labour.WagesApprovalRequest"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.WagesRequest"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.GetWages"
-            android:screenOrientation="portrait"/>
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:allowBackup">
 
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".Contractor.MapsActivityTrackLabor"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.JobWages"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.MainActivityContractorLogin"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.VerifyPhone"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.Register_labour"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.TrackLabor"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Contractor.MapsActivityTwo"
+            android:label="@string/title_activity_maps_two"></activity>
+        <activity
+            android:name=".Labour.ResetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.ForgetPassword"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.JobApplyDetailsArch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.AllJobs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.PaymentStatusContractor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.PaymentStatusAR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.WagesApprovalRequestENG"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.WagesRequestAR"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Developer.DevJobDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Developer.DevJObOffer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Developer.DeveloperProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Developer.LoginDeveloper"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Developer.DeveloperDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Developer.Register_developer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.JobAppliedDetailsEng"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.EngJobDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.GetWagesEngineer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.JobStatusApprovalEng"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.WriteReviewEngineer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.EngJobOffer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.EngProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.EngineerDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.LoginEngineer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Engineer.Register_Engineer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.JobWagesArchitech"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.AppliedJobsArchitecht"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.CheckPaymentStatus"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.PostJObArchitech"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.OwnerReview"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.WagesByOwner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.JobApplyDetailsOwner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.AppliedJobOwner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.PostJobOwner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.ArchitechProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.OwnerProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.ArchitechDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.LoginArchitech"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Architect.Register_Architect"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.OwnerDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.LoginOwner"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Owner.Register_Owner"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Labour.WriteReview" />
+        <activity
+            android:name=".Labour.WagesApprovalRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.WagesRequest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.GetWages"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.MapsActivityTrackLabor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.JobWages"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.MainActivityContractorLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.Register_labour"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.TrackLabor"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Contractor.MapsActivity"
             android:label="@string/title_activity_maps"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.jobStatusAndTrack"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.JobStatusApproval"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.JobApplyDetails"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.AppliedJobs"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.jobStatusAndTrack"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.JobStatusApproval"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.JobApplyDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.AppliedJobs"
+            android:screenOrientation="portrait" />
 
-        <uses-library android:name="com.google.android.maps"
-            android:screenOrientation="portrait"/>
+        <uses-library
+            android:name="com.google.android.maps"
+            android:screenOrientation="portrait" />
 
         <service android:name=".MyFirebaseMessagingService">
             <intent-filter>
@@ -155,32 +222,41 @@
             </intent-filter>
         </service>
 
-        <activity android:name=".Labour.JobDetails"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.PostJobs"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.ContractorProfile"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.VerifyPhoneContractor"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.JobOffer"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.LaborProfile"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Admin.AdminDashboard"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.ContractorDashboard"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Contractor.Register_contractor"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.MainActivityLaourLogin"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Labour.LabourDashboard"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Admin.OpenWebsite"
-            android:screenOrientation="portrait"/>
-        <activity android:name=".Admin.UpdateMain"
-            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Labour.JobDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.PostJobs"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity
+            android:name=".Contractor.ContractorProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.JobOffer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.LaborProfile"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.ContractorDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Contractor.Register_contractor"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.MainActivityLaourLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Labour.LabourDashboard"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.OpenWebsite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Admin.UpdateMain"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait"

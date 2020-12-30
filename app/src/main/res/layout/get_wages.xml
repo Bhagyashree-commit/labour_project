@@ -118,6 +118,7 @@
             android:textSize="@dimen/_13sdp"/>
 
         <TextView
+            android:visibility="gone"
             android:gravity="right"
             android:layout_alignParentRight="true"
             android:id="@+id/wages_approval_status"
@@ -131,6 +132,22 @@
             android:textAllCaps="true"
             android:textStyle="bold"
             android:textSize="@dimen/_13sdp"/>
+        <Button
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:id="@+id/wages_status1"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/wage_date"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="@string/done"
+            android:textStyle="bold"
+            android:background="@drawable/redcapsul"
+            android:textSize="@dimen/_13sdp"/>
+
+
 
         <TextView
             android:id="@+id/textcontractor_idwages"

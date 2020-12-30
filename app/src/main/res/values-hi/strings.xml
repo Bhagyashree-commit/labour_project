@@ -30,6 +30,8 @@
     <string name="specific">विशिष्ट विशेषज्ञता</string>
     <string name="expertsing">साल में अनुभव</string>
     <string name="approvejob">APPROVE / REJECT JOB</string>
+    <string name="datee">
+तारीख</string>
 
 
     <string name="jobstatsss">कार्य स्वीकार करें</string>
@@ -63,10 +65,17 @@
     <string name="jobexpired">ठेकेदार का नाम</string>
     <string name="postfee">पोस्ट शुल्क</string>
     <string name="acceptjob">कार्य स्वीकार करें</string>
+    <string name="applystatus">पहले से ही लागू</string>
+
     <string name="flowchart">फ्लो चार्ट</string>
     <string name="postworkjob">पोस्ट कार्य / नौकरी</string>
     <string name="acceptproposal">स्वीकार परियोजना</string>
     <string name="rating">रेटिंग</string>
+    <string name="appr">मंजूर </string>
+    <string name="notappr">
+अनुमोदित नहीं </string>
+    <string name="transferdone">
+मनी ट्रांसफर हो गया</string>
 
     <string name="mobnum">मोबाइल नंबर दर्ज करें</string>
     <string name="existinguser">    यहां लॉगिन करें..</string>
@@ -160,7 +169,8 @@ OTP भेजें</string>
     <string name="scope">
 काम की गुंजाइश</string>
     <string name="jobarea">
-जॉब एरिया डालें</string>
+
+दिनांक और समय दर्ज करें</string>
 
     <string name="post">
 नौकरी पोस्ट करें</string>
@@ -231,7 +241,8 @@ OTP भेजें</string>
     <string name="postjob">नौकरी पोस्ट</string>
     <string name="contractordashboard">ठेकेदार डैशबोर्ड</string>
     <string name="contractorprofile">ठेकेदार प्रोफाइल</string>
-    <string name="alljobs">सारी नौकरियां</string>
+    <string name="alljobs">
+कार्य सारांश</string>
     <string name="tracklabor">ट्रैक मजदूर</string>
     <string name="starttracking">ट्रैकिंग शुरू करें</string>
     <string name="giverating">रेटिंग दें</string>
@@ -245,6 +256,8 @@ OTP भेजें</string>
     <string name="select">
 भाषा का चयन करें</string>
     <string name="labourid">श्रमदाता आईडी :</string>
+    <string name="select_wage">
+वेतन सीमा का चयन करें</string>
 
   <!--  <string name="newuser">?????</string>
 -->

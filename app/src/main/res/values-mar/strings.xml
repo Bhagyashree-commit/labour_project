@@ -47,6 +47,15 @@
     <string name="jobexpired">नोकरीचा अनुभव घ्या</string>
     <string name="postfee">पोस्ट तपशील</string>
     <string name="acceptjob">नोकरी स्वीकारा </string>
+    <string name="applystatus">
+आधीच लागू</string>
+
+    <string name="appr">मंजूर </string>
+    <string name="datee">
+तारीख </string>
+    <string name="notappr">मंजूर नाही </string>
+    <string name="transferdone"> मनी ट्रान्सफर झाले</string>
+
     <string name="flowchart">फ्लो चार्ट</string>
     <string name="postworkjob">पोस्ट / जॉब पोस्ट</string>
     <string name="acceptproposal">प्रस्ताव स्वीकारा</string>
@@ -126,7 +135,8 @@
     <string name="jobdetails">कामाचे क्षेत्र</string>
     <string name="scope">कामाचे स्वरूप</string>
     <string name="jobwages">नोकरी मजुरी प्रविष्ट करा</string>
-    <string name="jobarea">नोकरी क्षेत्र प्रविष्ट करा</string>
+    <string name="jobarea">
+तारीख आणि वेळ प्रविष्ट करा</string>
     <string name="post">पोस्ट जॉब</string>
     <string name="jobtitle1">नोकरी शीर्षक</string>
     <string name="type">
@@ -165,7 +175,8 @@
     <string name="review">अभिप्राय</string>
     <string name="jobstats">नोकरी स्थिति</string>
     <string name="paymentStatus">पैसे भरल्याची स्थिती</string>
-    <string name="alljobs">पोस्ट केलेल्या नोकर्‍या</string>
+    <string name="alljobs">
+नोकरी सारांश</string>
     <string name="refrename">रेफरल प्रविष्ट करा</string>
     <string name="refcode">रेफरल व्यक्ती मोबाईल क्रमांक प्रविष्ट करा</string>
     <string name="postjob">पोस्ट जॉब</string>
@@ -180,4 +191,6 @@
     <string name="na">नाही</string>
     <string name="select">भाषा निवडा</string>
     <string name="labourid">लेबर आयडी :</string>
+    <string name="select_wage">
+वेतन श्रेणी निवडा</string>
 </resources>

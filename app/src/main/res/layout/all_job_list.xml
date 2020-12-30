@@ -10,8 +10,7 @@
     android:layout_marginBottom="@dimen/md_20"
     android:clickable="true"
     android:focusable="true"
-    android:background="@color/colorAccent"
-    android:foreground="?android:attr/selectableItemBackground"
+
     card_view:cardCornerRadius="10dp"
     card_view:cardElevation="5dp"
 
@@ -54,6 +53,11 @@
             android:visibility="gone" />
         <TextView
             android:id="@+id/job_idapply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+        <TextView
+            android:id="@+id/approved_statusall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:visibility="gone" />
@@ -138,6 +142,19 @@
             android:maxLines="1"
             android:layout_marginTop="@dimen/md_5"
             android:layout_marginBottom="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"/>
+        <TextView
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/applieddateapply"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:textColor="@color/red_400"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:text="Status"
             android:textStyle="bold"
             android:textSize="@dimen/_13sdp"/>
 

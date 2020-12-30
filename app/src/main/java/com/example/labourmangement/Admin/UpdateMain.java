@@ -39,12 +39,14 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import com.example.labourmangement.Architect.CheckPaymentStatus;
 import com.example.labourmangement.Architect.Register_Architect;
 import com.example.labourmangement.Contractor.ContractorProfile;
+import com.example.labourmangement.Contractor.MainActivityContractorLogin;
 import com.example.labourmangement.Contractor.PostJobs;
 import com.example.labourmangement.Contractor.Register_contractor;
 import com.example.labourmangement.DatabaseHelper.SessionManager;
 import com.example.labourmangement.DatabaseHelper.SessionManagerContractor;
 import com.example.labourmangement.Developer.Register_developer;
 import com.example.labourmangement.Engineer.Register_Engineer;
+import com.example.labourmangement.Labour.MainActivityLaourLogin;
 import com.example.labourmangement.Labour.Register_labour;
 import com.example.labourmangement.Owner.Register_Owner;
 import com.example.labourmangement.R;
@@ -181,12 +183,11 @@ sessionManagerContractor=new SessionManagerContractor(this);
             @Override
             public void onClick(View view) {
                 if(sessionManagerContractor.get("Lang").isEmpty()){
-                    Toast.makeText(UpdateMain.this, "plz select lang", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateMain.this, "please select any one language", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Log.e("ttttttt",sessionManager.get("Lang"));
-                    Intent i = new Intent(UpdateMain.this,
-                        Register_contractor.class);
+                    Intent i = new Intent(UpdateMain.this, MainActivityContractorLogin.class);
                 startActivity(i);
                 }
             }
@@ -204,12 +205,12 @@ sessionManagerContractor=new SessionManagerContractor(this);
             @Override
             public void onClick(View view) {
                 if(sessionManager.get("Lang").isEmpty()){
-                    Toast.makeText(UpdateMain.this, "plz select lang", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UpdateMain.this, "Please select any one language", Toast.LENGTH_SHORT).show();
                 }
                 else {
                     Log.e("testingalgfg11",""+sessionManager.get("Lang"));
                     Intent i = new Intent(getApplicationContext(),
-                            Register_labour.class);
+                            MainActivityLaourLogin.class);
                     startActivity(i);
                 }
 

@@ -175,19 +175,34 @@
             android:text="INR 56990"
             android:textSize="@dimen/_13sdp"/>
 
-        <TextView
-            android:gravity="right"
+        <Button
+            android:gravity="center"
             android:layout_alignParentRight="true"
-            android:id="@+id/approved_status"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:id="@+id/approved_status1"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_below="@id/applieddateapply"
             android:layout_toRightOf="@id/applieddateapply1"
-            android:layout_marginLeft="5dp"
-            android:textColor="@color/green_900"
+            android:textColor="@color/white"
             android:layout_marginTop="15dp"
-            android:text="Approved"
+            android:background="@drawable/greencapsule"
+            android:text="@string/acceptjob"
+            android:textAlignment="center"
+            android:textSize="@dimen/_13sdp"/>
+        <TextView
+
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:id="@+id/approved_status"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@id/applieddateapply"
+            android:layout_toRightOf="@id/applieddateapply1"
+            android:textColor="@color/green_800"
+            android:layout_marginTop="15dp"
+            android:text="@string/approve"
             android:textStyle="bold"
+            android:textAlignment="center"
             android:textSize="@dimen/_13sdp"/>
 
         <TextView

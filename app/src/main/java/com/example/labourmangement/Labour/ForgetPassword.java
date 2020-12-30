@@ -115,7 +115,8 @@ public class ForgetPassword extends AppCompatActivity {
                     flag=1;
                 }
                 if(flag==0) {
-                    getOTP();
+                    checkmobilenum();
+                    //getOTP();
                     otp_textbox_one.setText("");
                    otp_textbox_two.setText("");
                    otp_textbox_three.setText("");
@@ -166,23 +167,16 @@ public class ForgetPassword extends AppCompatActivity {
                     if(jsonObject.getString("success").equalsIgnoreCase("1")) {
                         //details= jsonObject.getString("Details");
                         getOTP();
-
-
-                    }
+  }
                     else {
                         Toast.makeText(getApplicationContext(),
                                 "Please Enter a Valid Number",
                                 Toast.LENGTH_LONG).show();
                     }
-
-
-
-                } catch (JSONException e) {
+                   } catch (JSONException e) {
                     e.printStackTrace();
+                    }
                 }
-
-
-            }
         },
                 new Response.ErrorListener() {
                     @Override

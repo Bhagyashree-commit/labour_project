@@ -94,8 +94,6 @@ public class JobWages extends AppCompatActivity implements JobAdapter.OnItemClic
                 loader.dismiss();
 
                 try {
-
-
                     JSONObject jsonObject = new JSONObject(response);
 
                     if(jsonObject.getString("Success").equalsIgnoreCase("true")) {
@@ -109,8 +107,6 @@ public class JobWages extends AppCompatActivity implements JobAdapter.OnItemClic
                                 //getting product object from json array
                                 JSONObject job = array.getJSONObject(i);
                                 JobWagesModel jobWagesModel = new JobWagesModel();
-                                //adding the product to product list
-
                                 jobWagesModel.setJob_title(job.getString("job_title"));
                                 jobWagesModel.setJob_wages(job.getString("job_wages"));
                                 jobWagesModel.setJob_id(job.getString("job_id"));
@@ -119,10 +115,7 @@ public class JobWages extends AppCompatActivity implements JobAdapter.OnItemClic
                                 jobWagesModel.setCreated_by(job.getString("created_by"));
                                 jobWagesModel.setLabor_name(job.getString("labor_name"));
                                 jobWagesModel.setWages_status(job.getString("wages_status"));
-
-                                //  Toast.makeText(JobWages.this,"nothing to  show"+response, Toast.LENGTH_LONG).show();
-
-                                jobwageslist.add(jobWagesModel);
+                             jobwageslist.add(jobWagesModel);
                             }
                         }
                     }
@@ -131,8 +124,6 @@ public class JobWages extends AppCompatActivity implements JobAdapter.OnItemClic
                                 jsonObject.getString("message"),
                                 Toast.LENGTH_LONG).show();
                     }
-                    //converting the string to json array object
-
 
                     Log.d(TAG, "jobgggggggggggggg" + jobwageslist.size());
                     //creating adapter object and setting it to recyclerview

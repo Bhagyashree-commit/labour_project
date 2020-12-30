@@ -2,6 +2,7 @@ package com.example.labourmangement.Adapter;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -67,8 +68,19 @@ public class AllJobsAdapter  extends RecyclerView.Adapter<AllJobsAdapter.ViewHol
         holder.contractor_name.setText(pu.getContractor_name());
         holder.postdate.setText(getTimeAgo(Long.parseLong(pu.getPost_date())));
 
+        if(pu.getApproved_status().equalsIgnoreCase("true"))
+        {
 
-
+            Log.e("status","40 "+pu.getApproved_status());
+            holder.itemView.setBackgroundColor(Color.rgb(238,232,170));
+            holder.status.setText(context.getResources().getString(R.string.appr));
+        }
+        else
+        {
+            Log.e("status","41 "+pu.getApproved_status());
+            holder.itemView.setBackgroundColor(Color.rgb(152,251,152));
+            holder.status.setText(context.getResources().getString(R.string.notappr));
+        }
     }
 
     @Override
@@ -87,6 +99,8 @@ public class AllJobsAdapter  extends RecyclerView.Adapter<AllJobsAdapter.ViewHol
         public  TextView applieddate;
         public  TextView created_by;
         public  TextView postdate;
+        public  TextView approved_status;
+        public  TextView status;
 
         public TextView contractor_name;
 
@@ -102,6 +116,8 @@ public class AllJobsAdapter  extends RecyclerView.Adapter<AllJobsAdapter.ViewHol
             postdate = itemView.findViewById(R.id.applieddateapply);
             created_by = itemView.findViewById(R.id.createdbyapply);
             contractor_name= itemView.findViewById(R.id.createdbyapplyname);
+            approved_status= itemView.findViewById(R.id.approved_statusall);
+            status= itemView.findViewById(R.id.status);
 
 
         }

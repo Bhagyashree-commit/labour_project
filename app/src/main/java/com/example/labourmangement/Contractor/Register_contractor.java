@@ -2,13 +2,9 @@ package com.example.labourmangement.Contractor;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.res.Configuration;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,17 +27,13 @@ import com.android.volley.toolbox.Volley;
 import com.example.labourmangement.CustomLoader;
 import com.example.labourmangement.DatabaseConfiguration.AppConfig;
 import com.example.labourmangement.DatabaseHelper.SQLiteHandler;
-import com.example.labourmangement.DatabaseHelper.SessionManager;
 import com.example.labourmangement.DatabaseHelper.SessionManagerContractor;
-import com.example.labourmangement.Labour.Register_labour;
-import com.example.labourmangement.Labour.VerifyPhone;
 import com.example.labourmangement.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.HashMap;
-import java.util.Locale;
 import java.util.Map;
 
 public class Register_contractor extends AppCompatActivity {
@@ -82,13 +74,13 @@ public class Register_contractor extends AppCompatActivity {
         db = new SQLiteHandler(getApplicationContext());
 
         // Check if user is already logged in or not
-        if (sessioncon.isLoggedIn()) {
-            // User is already logged in. Take him to main activity
-            Intent intent = new Intent(Register_contractor.this,
-                    ContractorProfile.class);
-            startActivity(intent);
-            finish();
-        }
+//        if (sessioncon.isLoggedIn()) {
+//            // User is already logged in. Take him to main activity
+//            Intent intent = new Intent(Register_contractor.this,
+//                    ContractorProfile.class);
+//            startActivity(intent);
+//            finish();
+//        }
 
 
         // Register Button Click event

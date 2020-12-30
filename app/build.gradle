@@ -87,8 +87,9 @@ dependencies {
     implementation 'com.github.bassaer:materialdesigncolors:1.0.0'
 //shadow
     implementation 'com.loopeer.lib:shadow:0.0.3'
-//smiley rating
-    implementation 'com.github.sujithkanna:smileyrating:2.0.0'
+
+    //gif
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.1.0'
 
 
 }

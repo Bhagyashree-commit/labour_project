@@ -250,7 +250,7 @@
             android:background="@drawable/square_box">
 
 
-            <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+            <Spinner
                 android:id="@+id/wageratespinner"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

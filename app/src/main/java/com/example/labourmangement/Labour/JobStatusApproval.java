@@ -1,13 +1,27 @@
 package com.example.labourmangement.Labour;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
+import android.app.Dialog;
+import android.content.Context;
 import android.content.res.Configuration;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -29,6 +43,7 @@ import com.example.labourmangement.DatabaseConfiguration.AppConfig;
 import com.example.labourmangement.DatabaseHelper.SessionManager;
 import com.example.labourmangement.R;
 import com.example.labourmangement.model.JobsStatusModel;
+import com.google.android.material.bottomsheet.BottomSheetDialog;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -49,6 +64,7 @@ public class JobStatusApproval extends AppCompatActivity {
     CustomLoader loader;
     SessionManager sessionManager;
     TextView fetchname;
+    WindowManager windowManager2;
 
 
     @Override
@@ -65,12 +81,13 @@ public class JobStatusApproval extends AppCompatActivity {
         recyclerViewjobs.setLayoutManager(layoutManager);
         loader = new CustomLoader(this, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
 
-
         sessionManager=new SessionManager((getApplicationContext()));
 
         jobstatus = new ArrayList<JobsStatusModel>();
 
         getapprovalRequest();
+        popupclass();
+       // showBottomSheetDialog();
         fetchname=(TextView)findViewById(R.id.fetchname);
 
         sessionManager = new SessionManager(getApplicationContext());
@@ -220,12 +237,78 @@ loader.dismiss();
     }
 
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-        }
+    public void showBottomSheetDialog() {
+        HashMap<String, String> user = sessionManager.getUserDetails();
 
-        return super.onOptionsItemSelected(item);
+        // name
+        String name = user.get(SessionManager.KEY_NAME);
+
+        // email
+        String email = user.get(SessionManager.KEY_EMAIL);
+        windowManager2 = (WindowManager)getSystemService(WINDOW_SERVICE);
+        LayoutInflater layoutInflater=(LayoutInflater)getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = getLayoutInflater().inflate(R.layout.payment_dialog, null);
+        final BottomSheetDialog dialog = new BottomSheetDialog(getApplicationContext());
+        dialog.setContentView(view);
+        ImageView ivClose = dialog.findViewById(R.id.ivClose);
+        //ImageView ivDoctorImage = dialog.findViewById(R.id.ivDoctorImage);
+
+        TextView tvDoctorName = dialog.findViewById(R.id.tvAlertMsg);
+
+
+        tvDoctorName.setText(name);
+
+
+        ivClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+
+        dialog.show();
+    }
+    private void popupclass() {
+        final Dialog dialog = new Dialog(JobStatusApproval.this, android.R.style.Theme_Translucent_NoTitleBar);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.payment_dialog);
+        Window window = dialog.getWindow();
+        WindowManager.LayoutParams wlp = window.getAttributes();
+        wlp.gravity = Gravity.CENTER;
+        wlp.flags &= ~WindowManager.LayoutParams.FLAG_BLUR_BEHIND;
+        window.setAttributes(wlp);
+        dialog.getWindow().setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT);
+        dialog.show();
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
+
+
+        ImageView ivClose = (ImageView) dialog.findViewById(R.id.ivClose);
+        TextView tvReason = (TextView) dialog.findViewById(R.id.tvAlertMsg);
+        Button ok = (Button) dialog.findViewById(R.id.ok);
+
+
+//        //set value
+//        tvAlertMsg.setText("Patrol Tour Start");
+//        tvReason.setText("Start New Patrol Tour?");
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        dialog.show();
+
+ok.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        dialog.dismiss();
+    }
+});
+
+
+        ivClose.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+            }
+        });
     }
 }

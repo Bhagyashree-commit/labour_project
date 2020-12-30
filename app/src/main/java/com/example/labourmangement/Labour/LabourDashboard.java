@@ -36,6 +36,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.labourmangement.Contractor.ContractorDashboard;
 import com.example.labourmangement.Contractor.ContractorProfile;
+import com.example.labourmangement.Contractor.CustomAdapterTwo;
 import com.example.labourmangement.CustomLoader;
 import com.example.labourmangement.DatabaseConfiguration.AppConfig;
 import com.example.labourmangement.DatabaseHelper.SessionManager;
@@ -57,11 +58,12 @@ RadioGroup rg_gender,rg_interestedon;
 RadioButton rb_daily,rbmothly,rb_weekly,rb_male,rb_female;
     private SessionManager session;
     Button btnsubmit;
-    Spinner categoryspinner;
-    MaterialBetterSpinner modeoftransport,wageratespinner,workinghourspinner;
+    Spinner categoryspinner,wageratespinner;
+    MaterialBetterSpinner modeoftransport,workinghourspinner;
     int flag;
    CustomLoader loader;
    CustomAdapter customAdapter;
+   CustomAdapterTwo customAdapterTwo;
 
     int images[] ={R.drawable.selectcat,R.drawable.genral_labor,R.drawable.new_labor, R.drawable.new_labor, R.drawable.brickwork_labor,R.drawable.new_labor,R.drawable.new_labor,R.drawable.new_labor, R.drawable.plaster, R.drawable.tile_fixer, R.drawable.plumber, R.drawable.fabricator, R.drawable.electrician, R.drawable.pop_worker, R.drawable.painter, R.drawable.rcc_carpenter };
     String[] SPINNER_DATA = {"SELECT CATEGORY","GENERAL LABOR",
@@ -105,7 +107,11 @@ RadioButton rb_daily,rbmothly,rb_weekly,rb_male,rb_female;
             "चित्रकार",
             "फर्निचर सुतार"};
 
-    String[] SPINNERWAGERATE = {"300-400","400-500","500-600","600-700","700-800","800-900"};
+    String[] SPINNERWAGERATE = {"SELECT WAGE RANGE","250","300","350","400","500","600","750","900","1100","1200"};
+    String[] SPINNERWAGERATEHINDI = {"वेतन का चयन करें","250","300","350","400","500","600","750","900","1100","1200"};
+    String[] SPINNERWAGERATEMARATHI = {"पृष्ठ रेंज निवडा","250","300","350","400","500","600","750","900","1100","1200"};
+
+
 
     String[] SPINNERWORKINGHOUR = {"9AM-5PM","9:30AM-10:30PM","10AM-6PM","10:30AM-6:30PM"};
 
@@ -125,14 +131,14 @@ RadioButton rb_daily,rbmothly,rb_weekly,rb_male,rb_female;
         labor_age = (EditText) findViewById(R.id.etlabour_age);
 
         labor_address = (EditText) findViewById(R.id.etlabour_postaladdress);
-        wageratespinner = (MaterialBetterSpinner) findViewById(R.id.wageratespinner);
+        wageratespinner =findViewById(R.id.wageratespinner);
 
         workinghourspinner = (MaterialBetterSpinner) findViewById(R.id.workinghourspinner);
         labor_interestedarea = (EditText) findViewById(R.id.etlabour_workingarea1);
         labor_interestarea1 = (EditText) findViewById(R.id.etlabour_workingarea2);
         labor_refrename = (EditText) findViewById(R.id.edit_refrename);
         labor_refercode = (EditText) findViewById(R.id.edit_refrcode);
-categoryspinner=findViewById(R.id.category_spinner);
+        categoryspinner=findViewById(R.id.category_spinner);
         modeoftransport = (MaterialBetterSpinner) findViewById(R.id.category_modeoftransport);
         btnsubmit = (Button) findViewById(R.id.button_submitlabordata);
         rg_gender = (RadioGroup) findViewById(R.id.radiogroupgender);
@@ -189,8 +195,33 @@ categoryspinner=findViewById(R.id.category_spinner);
         modeoftransport.setAdapter(adaptermodeoftransport);
 
 
-        ArrayAdapter<String> adapterwagerate = new ArrayAdapter<String>(LabourDashboard.this, android.R.layout.simple_dropdown_item_1line, SPINNERWAGERATE);
-        wageratespinner.setAdapter(adapterwagerate);
+//        ArrayAdapter<String> adapterwagerate = new ArrayAdapter<String>(LabourDashboard.this, android.R.layout.simple_dropdown_item_1line, SPINNERWAGERATE);
+//        wageratespinner.setAdapter(adapterwagerate);
+
+        if(session.get("Lang").equalsIgnoreCase("en")){
+            customAdapterTwo=new CustomAdapterTwo(getApplicationContext(),SPINNERWAGERATE);
+          wageratespinner.setAdapter(customAdapterTwo);
+
+            // Log.e("swati2",sessionManagerContractor.get("Lang"));
+        }
+        else if(session.get("Lang").equalsIgnoreCase("hi")){
+            customAdapterTwo=new CustomAdapterTwo(getApplicationContext(),SPINNERWAGERATEHINDI);
+            wageratespinner.setAdapter(customAdapterTwo);
+
+
+        }
+        else if(session.get("Lang").equalsIgnoreCase("mar")){
+            customAdapterTwo=new CustomAdapterTwo(getApplicationContext(),SPINNERWAGERATEMARATHI);
+            wageratespinner.setAdapter(customAdapterTwo);
+
+
+
+        }
+        else{
+            customAdapterTwo=new CustomAdapterTwo(getApplicationContext(),SPINNERWAGERATE);
+            wageratespinner.setAdapter(customAdapterTwo);
+
+        }
 
 //             if(session.get("Lang").equalsIgnoreCase("en")){
 //            customAdapter=new CustomAdapter(getApplicationContext(),images,SPINNER_DATA);
@@ -244,12 +275,12 @@ else
                 laborworkinghourholder = (String) adapterView.getItemAtPosition(i);
             }
         });
-        wageratespinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                laborwageholder = (String) adapterView.getItemAtPosition(i);
-            }
-        });
+//        wageratespinner.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+//                laborwageholder = (String) adapterView.getItemAtPosition(i);
+//            }
+//        });
 
         modeoftransport.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
@@ -431,7 +462,15 @@ public void GetValueFromEditText(){
                                     categoryspinner.setSelection(j);
                                 }
                             }
-                            wageratespinner.setText(job.getString("labor_wagerate").toString());
+                            for(int k=0;k<SPINNERWAGERATE.length;k++)
+                            {
+                                if(job.getString("labor_wagerate").equalsIgnoreCase(SPINNERWAGERATE[k]))
+
+                                {
+                                    wageratespinner.setSelection(k);
+                                }
+                            }
+                            //wageratespinner.setText(job.getString("labor_wagerate").toString());
                             modeoftransport.setText(job.getString("transport_mode").toString());
                             workinghourspinner.setText(job.getString("labor_workinghour").toString());
                             labor_interestedarea.setText(job.getString("particular_area").toString());

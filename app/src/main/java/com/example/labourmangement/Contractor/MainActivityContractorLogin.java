@@ -28,6 +28,7 @@ import com.android.volley.TimeoutError;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.labourmangement.Admin.UpdateMain;
 import com.example.labourmangement.CustomLoader;
 import com.example.labourmangement.DatabaseConfiguration.AppConfig;
 import com.example.labourmangement.DatabaseHelper.SQLiteHandler;
@@ -74,6 +75,25 @@ public class MainActivityContractorLogin extends AppCompatActivity {
 
 
 
+
+        loader = new CustomLoader(this, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
+
+        loader.setCancelable(false);
+
+        // SQLite database handler
+        db = new SQLiteHandler(getApplicationContext());
+
+        // Session manager
+        sessioncon = new SessionManagerContractor(getApplicationContext());
+        if (sessioncon.isLoggedIn()) {
+            // User is already logged in. Take him to main activity
+            Intent intent = new Intent(MainActivityContractorLogin.this,
+                    ContractorProfile.class);
+            startActivity(intent);
+            finish();
+        }
+
+
         forgetpass.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,15 +106,6 @@ public class MainActivityContractorLogin extends AppCompatActivity {
             }
         });
 
-        loader = new CustomLoader(this, android.R.style.Theme_Translucent_NoTitleBar_Fullscreen);
-
-        loader.setCancelable(false);
-
-        // SQLite database handler
-        db = new SQLiteHandler(getApplicationContext());
-
-        // Session manager
-        sessioncon = new SessionManagerContractor(getApplicationContext());
 
         HashMap<String, String> user = sessioncon.getUserDetails();
 
@@ -295,7 +306,7 @@ public class MainActivityContractorLogin extends AppCompatActivity {
     @Override
     public void onBackPressed() {
        super. onBackPressed();
-        Intent intent = new Intent(MainActivityContractorLogin.this, Register_contractor.class);
+        Intent intent = new Intent(MainActivityContractorLogin.this, UpdateMain.class);
         startActivity(intent);
     }
 

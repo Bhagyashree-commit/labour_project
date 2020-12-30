@@ -7,6 +7,16 @@ public class AllJobsModel {
     private String job_details;
     private String job_wages;
 
+    public String getApproved_status() {
+        return approved_status;
+    }
+
+    public void setApproved_status(String approved_status) {
+        this.approved_status = approved_status;
+    }
+
+    private String approved_status;
+
     public AllJobsModel() {
         this.job_id = job_id;
         this.job_title = job_title;
@@ -15,6 +25,7 @@ public class AllJobsModel {
         this.job_area = job_area;
         this.contractor_name = contractor_name;
         this.post_date = post_date;
+        this.approved_status = approved_status;
     }
 
     private String job_area;

@@ -196,12 +196,13 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
+
                     <ImageView
                         android:id="@+id/btnconfirmation"
                         android:layout_width="@dimen/_60sdp"
                         android:layout_height="@dimen/_60sdp"
-                        android:layout_marginTop="@dimen/_10sdp"
                         android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/_10sdp"
                         android:background="@drawable/approve_reject_new"
                         tools:ignore="VectorDrawableCompat" />
 

@@ -52,14 +52,7 @@ public class AllJobs extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_all_jobs);
 
-       /* getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.drawable.gradient));
-        getSupportActionBar().setTitle("All Posted Jobs");
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowHomeEnabled(true);*/
-
-        rv_paymentstatus = (RecyclerView) findViewById(R.id.rv_alljobs
-
-        );
+        rv_paymentstatus = (RecyclerView) findViewById(R.id.rv_alljobs);
         rv_paymentstatus.setHasFixedSize(true);
 
         layoutManager = new LinearLayoutManager(this);
@@ -105,30 +98,22 @@ public class AllJobs extends AppCompatActivity {
                                 Toast.LENGTH_LONG).show();
                     }
                     else{
-
                         Log.d(TAG, array.toString());
                         //traversing through all the object
                         for (int i = 0; i < array.length(); i++) {
-
-                            //getting product object from json array
                             JSONObject job = array.getJSONObject(i);
                             AllJobsModel allJobsModel = new AllJobsModel();
-                            //adding the product to product list
                             allJobsModel.setJob_id(job.getString("job_id"));
                             allJobsModel.setJob_title(job.getString("job_title"));
                             allJobsModel.setJob_wages(job.getString("job_wages"));
                             allJobsModel.setJob_area(job.getString("job_area"));
                             allJobsModel.setJob_details(job.getString("job_details"));
                             allJobsModel.setPost_date(job.getString("post_date"));
+                            allJobsModel.setApproved_status(job.getString("approved_status"));
                             allJobsModel.setContractor_name(job.getString("contractor_name"));
-
-
                             joblist.add(allJobsModel);
                         }
-
                     }
-
-
                     Log.d(TAG, "jobgggggggggggggg" + joblist.size());
                     //creating adapter object and setting it to recyclerview
                     AllJobsAdapter adapter = new AllJobsAdapter(AllJobs.this, joblist);
@@ -158,7 +143,6 @@ public class AllJobs extends AppCompatActivity {
                             System.out.println("server error......................." + error);
                             //hideDialog();
                             loader.dismiss();
-
                             int duration = Toast.LENGTH_SHORT;
                             Toast.makeText(AllJobs.this, "Server Error", duration).show();
                             //TODO
@@ -166,7 +150,6 @@ public class AllJobs extends AppCompatActivity {
                             System.out.println("NetworkError........................." + error);
                             //hideDialog();
                             loader.dismiss();
-
                             int duration = Toast.LENGTH_SHORT;
                             Toast.makeText(AllJobs.this, "Please Check Your Internet Connection", duration).show();
                             //TODO
@@ -174,11 +157,8 @@ public class AllJobs extends AppCompatActivity {
                             System.out.println("parseError............................." + error);
                             //hideDialog();
                             loader.dismiss();
-
                             int duration = Toast.LENGTH_SHORT;
                             Toast.makeText(AllJobs.this, "Error While Data Parsing", duration).show();
-
-                            //TODO
                         }
                     }
 
@@ -190,26 +170,7 @@ public class AllJobs extends AppCompatActivity {
                 params.put("created_by",email);
                 return params;
             }
-
         };
-
-        //adding our stringrequest to queue
         Volley.newRequestQueue(this).add(stringRequest);
-    }
-
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
-        return super.onCreateOptionsMenu(menu);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            finish();
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

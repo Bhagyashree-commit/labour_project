@@ -163,13 +163,13 @@ CustomLoader loader;
                                         //adding the product to product list
                                         jobModel.setJob_area(job.getString("job_area"));
                                         jobModel.setJob_title(job.getString("job_title"));
-                                        jobModel.setJob_details(job.getString("job_details"));
+                                       // jobModel.setJob_details(job.getString("job_details"));
                                         jobModel.setJob_wages(job.getString("job_wages"));
                                         jobModel.setJob_id(job.getString("job_id"));
+                                        jobModel.setStatus(job.getString("status"));
                                         jobModel.setCreated_by(job.getString("created_by"));
-                                        jobModel.setRole(job.getString("role"));
                                         jobModel.setContractor_name(job.getString("contractor_name"));
-                                        jobModel.setDate(job.getString("post_date"));
+                                      //  jobModel.setDate(job.getString("post_date"));
 
 
                                         jobmodellist.add(jobModel);
